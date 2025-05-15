@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Davenmar Bioagro | Productos Orgánicos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davenmar Bioagro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f6f6f6; color: #333; }
-    header, footer { background: #2e7d32; color: white; text-align: center; padding: 1.5em; }
-    main { padding: 2em; max-width: 900px; margin: auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    .producto { border-bottom: 1px solid #ccc; padding: 1.5em 0; }
-    img { max-width: 100%; border-radius: 8px; }
-    .button { background: #43a047; color: white; padding: 0.7em 1.5em; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 1em; }
-    h1, h2 { color: #2e7d32; }
-    .footer-info { font-size: 0.9em; margin-top: 1em; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #388E3C;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #2E7D32;
+    }
+    section {
+      padding: 40px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin: 16px 0;
+      border-radius: 8px;
+      background-color: white;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #2E7D32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Davenmar Bioagro</h1>
-  <p>Soluciones orgánicas y herbicidas naturales para tu finca</p>
+  <p>Productos Orgánicos y Herbicidas Naturales</p>
 </header>
 
-<main>
-  <section class="producto">
-    <h2>🌿 Herbicida Orgánico “Verde Control”</h2>
-    <img src="https://via.placeholder.com/800x300?text=Herbicida+Organico" alt="Herbicida orgánico" />
-    <p>Elimina malezas sin dañar el suelo. Biodegradable, seguro para cultivos y respetuoso con el ambiente.</p>
-    <strong>Precio: $18 por litro</strong><br>
-    <a href="https://wa.me/50761234567?text=Hola%2C%20quiero%20comprar%20el%20Herbicida%20Orgánico" class="button" target="_blank">Comprar por WhatsApp</a>
-  </section>
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#tienda">Tienda</a>
+  <a href="#educacion">Educación</a>
+  <a href="#contacto">Contáctanos</a>
+</nav>
 
-  <section class="producto">
-    <h2>🍅 Fertilizante Natural “BioFuerza”</h2>
-    <img src="https://via.placeholder.com/800x300?text=Fertilizante+Natural" alt="Fertilizante natural" />
-    <p>Fortalece raíces,
+<section id="inicio">
+  <h2>Bienvenido a Davenmar Bioagro</h2>
+  <p>Proveemos soluciones orgánicas y sostenibles para tu finca, hogar o cultivo.</p>
+</section>
+
+<section id="tienda">
+  <h2>Nuestros Productos</h2>
+  <div class="product">
+    <h3>Fertilizante Orgánico Davenmar</h3>
+    <img src="https://via.placeholder.com/400x200" alt="Fertilizante Orgánico">
+    <p>Hecho 100% con ingredientes naturales. Ideal para cultivos orgánicos.</p>
+    <a href="https://wa.me/50712345678" target="_blank">Comprar por WhatsApp</a>
+  </div>
+  <div class="product">
+    <h3>Herbicida Natural</h3>
+    <img src="https://via.placeholder.com/400x200" alt="Herbicida Natural">
+    <p>Controla malezas sin afectar tu suelo ni la salud de tus plantas.</p>
+    <a href="https://wa.me/50712345678" target="_blank">Comprar por WhatsApp</a>
+  </div>
+</section>
+
+<section id="educacion">
+  <h2>Educación</h2>
+  <p>Conoce las ventajas de los productos orgánicos, aprende a usarlos y mejora tus cultivos.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <div class="contact-form">
+    <form action="mailto:tucorreo@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Davenmar Bioagro. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
